@@ -1,6 +1,11 @@
 from flask import Flask,render_template
+from flask_script import Manager
+from settings import DevelopmentConfig
 
 app = Flask(__name__)
+manager = Manager(app)
+
+app.config.from_object(DevelopmentConfig)
 
 @app.route('/')
 def index():  # put application's code here
@@ -37,5 +42,7 @@ def Contact():
 def Introduction():
     return render_template('Introduction.html')
 
-if __name__=="__main__":
-    app.run(debug=True)
+
+
+if __name__ == '__main__':
+    manager.run()
