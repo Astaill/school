@@ -57,7 +57,7 @@
     margin-left: initial;
   }
 } .u-section-2 {
-  background-image: url("../../static/images/yyy.jpg");
+  background-image: url("../static/images/yyy.jpg");
   background-position: 50% 50%;
 }
 
@@ -98,7 +98,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 571px;
-  background-image: url("../../static/images/ffffff.jpg");
+  background-image: url("../static/images/ffffff.jpg");
   background-position: 50% 50%;
 }
 
